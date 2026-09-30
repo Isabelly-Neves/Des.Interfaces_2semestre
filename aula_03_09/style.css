@@ -1,141 +1,144 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    margin: 0;/*Remove as margens externas padrão de todos os elementos*/
+    padding: 0;/*Remove os espaçamentos internos padrão de todos os elementos*/
+    box-sizing: border-box;/*Garante que 'padding' e 'border' não aumentem o tamanho total do elemento*/
+    font-family: Arial, sans-serif;/*Define a tipografia padrão para todo o site*/
 }
 
 body {
-    background-color: #dce5f2;
-    color: #333;
-    line-height: 1.6;
+    background-color: #dce5f2;/*Define a cor de fundo de toda a página*/
+    color: #333;/*Define a cor padrão dos textos*/
+    line-height: 1.6;/*Melhora a leitura aumentando a altura da linha dos textos*/
 }
 
 header {
-    background-color: #b3047e;
-    color: #fff;
-    padding: 1.5rem 1rem;
-    text-align: center;
+    background-color: #b3047e;/*Define a cor de fundo do cabeçalho*/
+    color: #fff;/*Define a cor dos textos do cabeçalho*/
+    padding: 1.5rem 1rem; /*Define o espaçamento interno*/
+    text-align: center;/*Centraliza o título e o menu dentro do cabeçalho*/
 }
 
 header h1 {
-    color: #fff;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+    color: #fff;/*Garante que o título principal do cabeçalho seja branco*/
+    margin-bottom: 1rem;/*Adiciona uma margem abaixo do título para afastar do menu*/
+    font-size: 1.8rem;/*Define o tamanho da fonte do título*/
 }
 
+/* Estilo da lista do menu */
 nav.main-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    padding: 0;
-    margin: 0;
+    list-style: none;/*Remove as bolinhas (marcadores) padrão das listas <ul>*/
+    display: flex;/*Transforma a lista em Flexbox para alinhar os itens lado a lado*/
+    justify-content: center;/*Centraliza os botões do menu horizontalmente*/
+    flex-wrap: wrap;/*Permite que os botões quebrem para a linha de baixo em telas pequenas*/
+    gap: 12px;/*Define a distância de 12px entre cada botão do menu*/
+    padding: 0;/*Limpa o padding da lista*/
+    margin: 0; /*Limpa a margem da lista*/
 }
 
+/* Estilo dos links/botões do menu */
 nav.main-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.15);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #fff;/*Cor do texto do botão (branco)*/
+    text-decoration: none;/*Remove o sublinhado padrão dos links <a>*/
+    font-weight: bold;/*Deixa o texto do botão em negrito*/
+    padding: 8px 16px;/*Dá formato de botão (8px em cima/baixo, 16px nas laterais)*/
+    border-radius: 4px;/*Arredonda levemente os cantos do botão*/
+    background-color: rgba(255, 255, 255, 0.15); /*Fundo branco semi-transparente*/
+    transition: background-color 0.3s ease, color 0.3s ease;/*Transição suave de 0.3s ao passar o mouse*/
 }
 
 nav.main-nav a:hover, nav.main-nav a.active {
-    background-color: #fff;
-    color: #b3047e;
+    background-color: #fff;/*O fundo do botão fica branco sólido*/
+    color: #b3047e;/*O texto do botão muda para magenta*/
 }
 .anchor-nav {
-    margin-top: 10px;
+    margin-top: 10px;/*Cria um espaço acima do submenu de âncoras*/
 }
 .anchor-nav a {
-    font-size: 0.85rem;
-    padding: 4px 10px;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    font-size: 0.85rem;/*Deixa o texto do submenu ligeiramente menor*/
+    padding: 4px 10px;/*Deixa o botão do submenu mais compacto*/
+    background: transparent;/*Mantém o fundo transparente*/
+    border: 1px solid rgba(255, 255, 255, 0.4);/*Adiciona uma borda fina semi-transparente*/
 }
 
 main, .content {
     max-width: 850px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin: 2rem auto;/*Limita a largura máxima do bloco de conteúdo*/
+    margin: 2rem auto;/*Centraliza o bloco na tela e cria margem de emcima e em baixo*/
+    padding: 2rem;/*Cria espaço interno entre a borda do cartão e o texto*/
+    background-color: #ffffff;/*Fundo branco para o cartão de conteúdo*/
+    border-radius: 8px; /*Arredonda as pontas do cartão principal*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /*Adiciona uma sombra leve e elegante atrás do cartão*/
 }
 
 h1, h2, h3 {
-    color: #b3047e;
-    margin-bottom: 1rem;
+    color: #b3047e;/*Define a cor magenta para os títulos internos*/
+    margin-bottom: 1rem;/*Adiciona espaçamento abaixo dos títulos*/
 }
 
 section, .card-section {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;/*Separa cada bloco de seção por 2rem de distância vertical*/
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin: 1.5rem 0;
-    display: block;
+    max-width: 100%;/*Garante que a imagem nunca ultrapasse a largura da tela*/
+    height: auto;/*Mantém a proporção de altura e largura da imagem sem distorcer*/
+    border-radius: 6px;/*Arredonda os cantos das imagens*/
+    margin: 1.5rem 0; /*Espaçamento acima e abaixo da imagem*/
+    display: block;/*Garante que a imagem se comporte como um bloco próprio*/
 }
 
 ul, ol {
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;/*Espaço abaixo das listas*/
+    padding-left: 1.5rem;/*Indentação para recuar os pontos/números da lista*/
 }
 
 li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;/*Espaçamento entre cada item da lista*/
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
+    width: 100%;/*Faz a tabela ocupar toda a largura do cartão de conteúdo*/
+    border-collapse: collapse;/*Funde as bordas das células eliminando espaços duplos*/
+    margin: 1.5rem 0;/*Adiciona margem acima e abaixo da tabela*/
 }
 
 table, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #ccc;/*Linha de borda cinza clara em volta da tabela e células*/
 }
 
 th, td {
-    padding: 10px;
-    text-align: left;
+    padding: 10px;/*Espaçamento interno dentro de cada célula para o texto não colar na borda*/
+    text-align: left;/*Alinha o texto das células à esquerda*/
 }
 
 th {
-    background-color: #f2f2f2;
-    color: #b3047e;
+    background-color: #f2f2f2;/*Cor de fundo cinza bem claro para o cabeçalho da tabela*/
+    color: #b3047e;/*Cor magenta para os títulos das colunas*/
 }
 
 .color-badge {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 3px;
-    margin-right: 5px;
-    vertical-align: middle;
+    display: inline-block;/*Permite definir largura/altura mantendo alinhado com o texto*/
+    width: 15px;/*Largura do quadradinho de cor*/
+    height: 15px;/*Altura do quadradinho de cor*/
+    border-radius: 3px;/*Arredonda levemente o quadradinho*/
+    margin-right: 5px;/*Espaço entre o quadrado de cor e o nome da cor*/
+    vertical-align: middle;/*Alinha o quadrado com o meio da linha do texto*/
 }
 
 footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #d5dae2;
-    font-size: 0.9rem;
-    color: #555;
-    margin-top: 2rem;
+    text-align: center;/*Centraliza o texto de direitos autorais no rodapé*/
+    padding: 1.5rem;/*Espaçamento interno do rodapé*/
+    background-color: #d5dae2;/*Cor de fundo cinza levemente mais escuro que o body*/
+    font-size: 0.9rem;/*Tamanho de fonte reduzido*/
+    color: #555;/*Cor de texto cinza intermediário*/
+    margin-top: 2rem;/*Distância entre o conteúdo principal e o rodapé*/
 }
 
 a {
-    color: #3498db;
-    text-decoration: none;
+    color: #3498db;/*Cor azul para links no meio do texto*/
+    text-decoration: none;/*Remove o sublinhado inicial*/
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline;/*Adiciona o sublinhado quando o usuário passa o mouse por cima*/
 }
